@@ -10,6 +10,7 @@
     --columbia-blue: #BFD7EA;
     --bittersweet: #FF6663;
     --chartreuse: #FF6663;
+    --bittersweet-ligher: #fd7977;
 }
 
 
@@ -162,6 +163,7 @@ footer {
     align-items: center;
     flex-direction: column;
     color: #fff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin-bottom: .5rem;
 }
 
@@ -178,6 +180,7 @@ footer {
 .other-links a {
     text-decoration: none;
     color: #fff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 
@@ -196,12 +199,6 @@ footer {
     margin-top: 10rem;
 }
 
-.videos-title {
-    font-size: 2rem;
-    color: #fff;
-    text-align: center;
-}
-
 .videos {
     display: flex;
     justify-content: center;
@@ -213,7 +210,7 @@ footer {
     gap: 3rem;
 }
 
-.section-about-us p {
+.section-about-us p, .videos-title {
     font-size: 2rem;
     text-align: center;
     color: #fff;
@@ -316,4 +313,71 @@ footer {
     color: #fff;
     text-align: center;
     margin-top: 3rem;
+}
+
+.articles {
+    width: 90%;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.article img {
+    width: 100%;
+    border-radius: 25px 25px 0 0;
+    filter:brightness(.8)
+}
+
+.article p, .article h2, .article a, .header-articles {
+    color: #000;
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.article {
+    border-radius: 30px;
+    display: flex;
+    gap: 2.4em;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 500px;
+    max-width: 30%;
+    min-height: 10%;
+    background-color: #FFE1EA;
+}
+
+.header-articles {
+    text-align: center;
+    margin-top: 10rem;
+}
+
+.article-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    padding: 1em;   
+    flex-direction: column;
+    background: #FFE1EA;
+    padding: 2em;
+    border-radius: 0 0 25px 25px;
+}
+
+.article .article-content a {
+    text-decoration: none;
+    background-color: var(--bittersweet);
+    padding: .7em 1.5em;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    border: none;
+}
+
+.article .article-content a:hover {
+    background-color: var(--bittersweet-ligher);
 }
