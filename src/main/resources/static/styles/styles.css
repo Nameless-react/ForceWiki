@@ -3,3 +3,174 @@
     box-sizing: border-box;
     padding: 0;
 }
+
+:root {
+    --main: #fff;
+    --prussian-blue: #0B3954;
+    --columbia-blue: #BFD7EA;
+    --bittersweet: #FF6663;
+    --chartreuse: #FF6663;
+}
+
+
+body {
+    background-color: #050604;
+}
+
+.background-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.background {
+    background: url("https://cdn.wallpapersafari.com/38/65/Fcx7LA.jpg");
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+    height: 100vw;
+    filter: brightness(.5);
+    background-attachment: fixed;
+}
+
+.content-container {
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.title {
+    font-size: max(1.5rem, 2rem + 1vw);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #fff;
+    margin-top: 15%;
+    margin-bottom: 5%;
+    position: relative;
+    text-align: center;
+    z-index: 100;
+}
+
+.search-topic {
+    position:relative;
+    z-index: 100;
+    width: 25%;
+    height: 3%;
+    border-radius: 30px;
+    padding: 2px 20px;
+    outline: none;
+    border: none;
+    transition: width .7s ease;
+    transform-origin: center;
+    font-weight: bold;
+}
+
+.search-topic:focus {
+    width: 30%;
+}
+
+.search-topic::placeholder {
+    font-weight: bold;
+    font-size: 1rem;
+    opacity: .4;
+}
+
+
+.nav-list-links a, .page-name a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.3rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+}
+
+
+.nav-list-links a::after {
+    content: '';
+    position: absolute;
+    transition: .8s;
+    bottom: -2px;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: var(--bittersweet);
+}
+
+.nav-list-links a::before {
+    content: '';
+    position: absolute;
+    transition: .8s;
+    bottom: -2px;
+    right: 50%;
+    width: 0;
+    height: 2px;
+    background-color: var(--bittersweet);
+}
+
+
+.nav-list-links a:hover:after {
+    width: 50%;
+}
+
+.nav-list-links a:hover:before {
+    width: 50%;
+}
+
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    padding: 1.5rem 3rem;
+    gap: 2.5rem;
+    width: 100%;
+}
+nav {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+}
+
+.nav-list li:first-child {
+    margin-right: auto;   
+}
+.nav-list .page-name a {
+    font-size: 1.8rem;
+ 
+}
+
+footer {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.other-links {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 3rem;
+    gap: 5rem;
+}
+
+.other-links a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.other-links a:hover {
+    color: #ddd;
+}
