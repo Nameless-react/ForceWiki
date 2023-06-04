@@ -243,13 +243,15 @@ footer {
 
 .cards {
     display: flex;
-    justify-content: center;
+    justify-content:space-around;
     align-items: center;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 1rem;
     margin: 0 auto;
-    width: 80%;
-    margin-top: 10rem;
+    min-height: 100vh;
+    align-content: center;
+    background: url("https://wallpapercrafter.com/desktop/159611-Star-Wars-Imperial-Forces-science-fiction-spaceship-Star-Wars-Ships-Star-Destroyer.jpg");
+    background-attachment: fixed;
 }
 
 .card img {
@@ -263,8 +265,10 @@ footer {
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    background-color: var(--prussian-blue);
+    backdrop-filter: blur(60px);
     width: 15%;
+    box-shadow: 120px 2px 80px #99999935;
+    outline: 0.009px solid #fff1;
     min-width: 300px;
     min-height: 400px;
     border-radius: 20px;
@@ -289,10 +293,17 @@ footer {
 .card a {
     text-decoration: none;
     font-size: 1.2rem;
-    background-color: var(--chartreuse);
+    color: #000;
+    background-color: var(--columbia-blue);
     padding: .4em  1.2em;
     border-radius: 30px;
     font-weight: bold;
+    margin-top: 2em;
+    transition: transform .7s;
+}
+
+.card a:hover {
+    transform: scale(1.1);
 }
 
 .video-trailer {
@@ -305,14 +316,25 @@ footer {
 
 .video-trailer h2 {
     color: #fff;
+    margin-top: 1em;
     font-size: 3.5rem;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.video-trailer figcaption {
-    color: #fff;
-    text-align: center;
-    margin-top: 3rem;
+.video-trailer article {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.video-trailer img {
+    width: 10%;
+    align-self: flex-start;
+    margin-left: 10em;
+}
+
+.video-trailer figure video source {
+    justify-self: center;
 }
 
 .articles {
@@ -332,10 +354,18 @@ footer {
     filter:brightness(.8)
 }
 
-.article p, .article h2, .article a, .header-articles {
+.article p, .article h2, .article a {
     color: #000;
     text-align: center;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.header-articles {
+    color: #fff;
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 5rem;
+    font-size: 2rem;
 }
 
 .article {
@@ -345,10 +375,10 @@ footer {
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    min-width: 500px;
-    max-width: 30%;
-    min-height: 10%;
+    min-width: 580px;
+    max-width: 20%;
     background-color: #FFE1EA;
+    box-shadow: 10px 2px 30px 5px #fff2;
 }
 
 .header-articles {
@@ -361,7 +391,7 @@ footer {
     justify-content: center;
     align-items: center;
     gap: 2em;
-    padding: 1em;   
+    min-height: 300px;  
     flex-direction: column;
     background: #FFE1EA;
     padding: 2em;
@@ -380,4 +410,72 @@ footer {
 
 .article .article-content a:hover {
     background-color: var(--bittersweet-ligher);
+}
+
+
+.podcasts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url("https://www.pixelstalk.net/wp-content/uploads/images6/Star-Wars-Space-Background-HD.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+    background-attachment: fixed;
+}
+
+.audios {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto;
+    gap: 2em;
+    flex-wrap: wrap;
+    min-height: 80vh;
+    
+}
+
+.audio {
+    min-width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 120px 2px 80px #99999935;
+    outline: 0.009px solid #fff1;
+    width: 20%;
+    padding: 1.5em 3em;
+    backdrop-filter: blur(60px);
+    gap: 1em;
+}
+
+.audio article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1em
+}
+
+.audio article h2, .audio figcaption {
+    color: #fff;
+}
+
+.audio figcaption {
+    align-self: flex-start;
+}
+
+.audio img {
+    border-radius: 20px;
+}
+
+.title-podcasts {
+    text-align: center;
+    color: #fff;
+    margin-top: -3rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2rem;
 }
