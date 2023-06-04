@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.css">
-    <title>Home</title>
+    <title>Newletter</title>
 </head>
 <body>
     <header>
@@ -16,34 +16,21 @@
                 <li class="nav-list-links"><a href="articles.html">Articles</a></li>
                 <li class="nav-list-links"><a href="podcasts.html">Podcasts</a></li>
                 <li class="nav-list-links"><a href="characters.html">Characters</a></li>
-                <li class="nav-list-links"><a href="newsletter.html">Newsletter</a></li>
+                <li class="nav-list-links"><a href="newsletter.html">Newsletter</a></li>    
                 <li class="nav-list-links"><a href="aboutUs.html">About us</a></li>
             </ul>
         </nav>
     </header>
-    
-    <div class="background-container">
-        <div class="content-container">
-            <h1 class="title">Search the topic you are more interesting in Star Wars</h1>
-            <input type="text" class="search-topic" placeholder="Search ForceWiki">
-        </div>
-        <div class="background"></div>
-    </div>
-
-    <div>
-        <section class="video-trailer">
-            <h2 >Exclusively Ashoka's trailer</h2>
-            <img src="https://www.pngarts.com/files/11/Tie-Fighter-PNG-Free-Download.png" alt="">
-            <article>
-                <figure>
-                    <video controls>
-                        <source src="videos/Ahsoka Teaser Trailer Disney+.mp4" type="video/mp4">
-                        Your browser does not support the <code>video</code> tag.
-                    </video>
-                </figure>
-            </article>
-        </section>
-    </div>
+    <form action="#">
+        <img src="https://pngimg.com/d/yoda_PNG14.png" alt="Baby Yoda">
+        <h1>Newsletter</h1>
+        <p>Stay informed about all the events happening in Star Wars.</p>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username">
+        <button type="submit">Send</button>
+    </form>
 
     <footer>
         <ul class="other-links">
@@ -55,5 +42,6 @@
         </ul>
         @2023 ForceWiki All the rights reserved
     </footer>
+    
 </body>
 </html>
