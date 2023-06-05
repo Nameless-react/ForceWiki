@@ -435,29 +435,32 @@ footer {
     margin: 0 auto;
     gap: 2em;
     flex-wrap: wrap;
+    width: 90%;
     min-height: 80vh;
     
 }
 
 .audio {
-    min-width: 500px;
+    min-width: 600px;
+    width: 30%;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 20px;
     box-shadow: 120px 2px 80px #99999935;
     outline: 0.009px solid #fff1;
-    width: 20%;
     padding: 1.5em 3em;
     backdrop-filter: blur(60px);
-    gap: 1em;
+    gap: 2em;
 }
 
 .audio article {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
+    padding: 1em;
+    width: 70%;
     gap: 1em
 }
 
@@ -465,12 +468,23 @@ footer {
     color: #fff;
 }
 
+.audio article h2 {
+    font-size: 90%;
+    min-height: 60px;
+}
+
 .audio figcaption {
-    align-self: flex-start;
+    font-size: .8rem;
+    font-weight: lighter;
+}
+
+.audio article figure audio {
+    width: 100%;
 }
 
 .audio img {
-    border-radius: 20px;
+    max-width: 225px;
+    object-fit: cover;
 }
 
 .title-podcasts {
@@ -566,12 +580,12 @@ form button {
 
 form button:hover {
     border: var(--button-color) 10px solid;
-    text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em var(--button-color);
+    text-shadow: 0 0 0.125em #ffffff4d, 0 0 0.45em var(--button-color);
     box-shadow: inset 0 0 0.5em 0 var(--button-color), 0 0 0.5em 0 var(--button-color);
 }
 
 form img {
     width: 200px;
     position: absolute;
-    top: -7rem;
+    top: -6.5rem;
 }
